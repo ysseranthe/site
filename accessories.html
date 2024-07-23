@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="styles/ph/icon192.png" type="image/png">
+    <link rel="stylesheet" href="styles/style_accessories.css"> 
+    <title>Guitar Haven</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Guitar Haven</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="guitars.html">Гитары</a></li>
+                <li><a href="amp.html">Усилители</a></li>
+                <li><a href="strings.html">Струны</a></li>
+                <li><a href="accessories.html">Аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-text">
+                Аксессуары
+            </div>
+            <div class="main-content">
+
+                    <div class="cell">
+                        <a href="#" onclick="showForm('Dunlop 4170 Gator Grip Standard Display', '12999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/Dunlop_4170_Gator_Grip_Standard_Display.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Dunlop</div>
+                            <div class="model">4170 Gator Grip Standard Display</div>
+                            <div class="price">12 999 ₽</div>
+                        </div>
+                        </a>
+                    </div>
+                
+                <div class="cell">
+                    <a href="#" onclick="showForm('Dunlop DGT301 System 65 String Change Tech Kit', '15999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/Dunlop_DGT301_System_65_String_Change_Tech_Kit.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Dunlop</div>
+                            <div class="model">DGT301 System 65 String Change Tech Kit</div>
+                            <div class="price">15 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="cell">
+                    <a href="#" onclick="showForm('Ernie Ball 4142 Jacquard Red Rose', '2499')">
+                        <div class="cell-image">
+                            <img src="styles/ph/ERNIE_BALL_4142_Jacquard_Red_Rose.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Ernie Ball</div>
+                            <div class="model">4142 Jacquard Red Rose</div>
+                            <div class="price">2 499 ₽</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cell">
+                    <a href="#" onclick="showForm('Quik Lok QL632', '6999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/QUIK_LOK_QL632.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Quik Lok</div>
+                            <div class="model">QL632</div>
+                            <div class="price">6 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="contacts">
+                <p>Москва, Ленинский проспект, 63/2 | 9:00 — 21:00 (Без выходных)</p>
+                <nav class="footer-menu">
+                    <div class="socials">
+                        <ul>
+                            <li><a href="https://vk.com/guitar_haven" class="vk">ВКОНТАКТЕ</a></li>
+                            <li><a href="https://t.me/+OO-xikKGT0M5MjQy" class="tg">TELEGRAM</a></li>
+                            <li><a href="https://www.youtube.com/@guitar_haven" class="youtube">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="copyright">© Гитарный магазин Guitar Haven, 2024</div>
+            </div>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2 id="form-title"></h2>
+                <form id="order-form" action="order.php" method="post">
+                    <input type="hidden" id="item-name" name="item-name">
+                    <input type="hidden" id="item-price" name="item-price">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

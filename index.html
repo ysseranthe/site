@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="styles/ph/icon192.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Guitar Haven</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Guitar Haven</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="guitars.html">Гитары</a></li>
+                <li><a href="amp.html">Усилители</a></li>
+                <li><a href="strings.html">Струны</a></li>
+                <li><a href="accessories.html">Аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="video">
+                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                    <source src="styles/ph/bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="main-text">
+                <p>Главный гитарный магазин Москвы</p>
+            </div>
+            <div class="main-button">
+                <h2><a href="guitars.html">Каталог</a></h2>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- <div class="map-widget">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8717be2342166a9653dd9c86ca98a94286b40d418e5091d7e5487459c2829830&amp;source=constructor"></iframe>
+            </div>  -->
+            <div class="contacts">
+                <p>Москва, Ленинский проспект, 63/2 | 9:00 — 21:00 (Без выходных)</p>
+                <nav class="footer-menu">
+                    <div class="socials">
+                        <ul>
+                            <li><a href="https://vk.com/guitar_haven" class="vk">ВКОНТАКТЕ</a></li>
+                            <li><a href="https://t.me/+OO-xikKGT0M5MjQy" class="tg">TELEGRAM</a></li>
+                            <li><a href="https://www.youtube.com/@guitar_haven" class="youtube">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="copyright">© Гитарный магазин Guitar Haven, 2024</div>
+            </div>
+        </div>
+    </main>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js', {scope: '.'})
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="styles/ph/icon192.png" type="image/png">
+    <link rel="stylesheet" href="styles/style_amp.css"> 
+    <title>Guitar Haven</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Guitar Haven</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="guitars.html">Гитары</a></li>
+                <li><a href="amp.html">Усилители</a></li>
+                <li><a href="strings.html">Струны</a></li>
+                <li><a href="accessories.html">Аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-text">
+                Усилители
+            </div>
+            <div class="main-content">
+
+                    <div class="cell">
+                        <a href="#" onclick="showForm('Marshall MG30GFX', '39999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/marshall_mg30gfx.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Marshall</div>
+                            <div class="model">MG30GFX</div>
+                            <div class="price">39 999 ₽</div>
+                        </div>
+                        </a>
+                    </div>
+                
+                <div class="cell">
+                    <a href="#" onclick="showForm('VOX AC30 HAND-WIRED', '49999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/vox_AC30_hand-wired.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">VOX</div>
+                            <div class="model">AC30 HAND-WIRED</div>
+                            <div class="price">49 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="cell">
+                    <a href="#" onclick="showForm('Orange Crush 35RT', '39999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/orange_crush_35rt.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Orange</div>
+                            <div class="model">Crush 35RT</div>
+                            <div class="price">39 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cell">
+                    <a href="#" onclick="showForm('Boss KATANA-50 MkII', '44999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/boss_katana_50_mk_ll.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Boss</div>
+                            <div class="model">KATANA-50 MkII</div>
+                            <div class="price">44 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="contacts">
+                <p>Москва, Ленинский проспект, 63/2 | 9:00 — 21:00 (Без выходных)</p>
+                <nav class="footer-menu">
+                    <div class="socials">
+                        <ul>
+                            <li><a href="https://vk.com/guitar_haven" class="vk">ВКОНТАКТЕ</a></li>
+                            <li><a href="https://t.me/+OO-xikKGT0M5MjQy" class="tg">TELEGRAM</a></li>
+                            <li><a href="https://www.youtube.com/@guitar_haven" class="youtube">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="copyright">© Гитарный магазин Guitar Haven, 2024</div>
+            </div>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2 id="form-title"></h2>
+                <form id="order-form" action="order.php" method="post">
+                    <input type="hidden" id="item-name" name="item-name">
+                    <input type="hidden" id="item-price" name="item-price">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="styles/ph/icon192.png" type="image/png">
+    <link rel="stylesheet" href="styles/style_guitars.css"> 
+    <title>Guitar Haven</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Guitar Haven</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="guitars.html">Гитары</a></li>
+                <li><a href="amp.html">Усилители</a></li>
+                <li><a href="strings.html">Струны</a></li>
+                <li><a href="accessories.html">Аксессуары</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-text">
+                Гитары
+            </div>
+            <div class="main-content">
+
+                    <div class="cell" onclick="showForm('Fender American Performer Mustang', '249999')">
+                        <a href="#">
+                        <div class="cell-image">
+                            <img src="styles/ph/american_preformer_mustang.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Fender</div>
+                            <div class="model">American Performer Mustang</div>
+                            <div class="price">249 999 ₽</div>
+                        </div>
+                        </a>
+                    </div>
+
+                <div class="cell">
+                    <a href="#" onclick="showForm('Fender American Professional II Jazzmaster', '309999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/american_professional_ll_jazzmaster.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Fender</div>
+                            <div class="model">American Professional II Jazzmaster</div>
+                            <div class="price">309 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cell">
+                    <a href="#" onclick="showForm('Fender Professional II Stratocaster', '319999')">
+                        <div class="cell-image">
+                            <img src="styles/ph/american_professional_ll_stratocaster.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Fender</div>
+                            <div class="model">American Professional II Stratocaster</div>
+                            <div class="price">319 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="cell">
+                    <a href="#" onclick="showForm('Fender Brent Mason Telecaster', '349999')" >
+                        <div class="cell-image">
+                            <img src="styles/ph/brent_mason_telecaster.png">
+                        </div>
+                        <div class="cell-text">
+                            <div class="maker">Fender</div>
+                            <div class="model">Brent Mason Telecaster</div>
+                            <div class="price">349 999 ₽</div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="contacts">
+                <p>Москва, Ленинский проспект, 63/2 | 9:00 — 21:00 (Без выходных)</p>
+                <nav class="footer-menu">
+                    <div class="socials">
+                        <ul>
+                            <li><a href="https://vk.com/guitar_haven" class="vk">ВКОНТАКТЕ</a></li>
+                            <li><a href="https://t.me/+OO-xikKGT0M5MjQy" class="tg">TELEGRAM</a></li>
+                            <li><a href="https://www.youtube.com/@guitar_haven" class="youtube">YOUTUBE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="copyright">© Гитарный магазин Guitar Haven, 2024</div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeForm()">&times;</span>
+                <h2 id="form-title"></h2>
+                <form id="order-form" action="order.php" method="post">
+                    <input type="hidden" id="item-name" name="item-name">
+                    <input type="hidden" id="item-price" name="item-price">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
