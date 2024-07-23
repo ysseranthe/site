@@ -14,7 +14,8 @@ self.addEventListener('install',async event => {
 self.addEventListener('activate', event => {});
 
 self.addEventListener('fetch', event => {
-    console.log("Fetch", event.request);
+    console.log("Fetch", event.request.url);
+    event.respondWith(cacheFirst(event.request));
 })
 
 async function cacheFirst(request) {
