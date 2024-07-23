@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 554.59 59.51">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #17202b;
+        font-family: EngraversMT, 'Engravers MT';
+        font-size: 55.92px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.19em;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <text class="cls-2" transform="translate(0 47.03)"><tspan x="0" y="0">Gui</tspan><tspan class="cls-3" x="141.53" y="0">t</tspan><tspan x="187.43" y="0">ar H</tspan><tspan class="cls-4" x="366.28" y="0">a</tspan><tspan x="404.87" y="0">ven</tspan></text>
+  </g>
+</svg>
